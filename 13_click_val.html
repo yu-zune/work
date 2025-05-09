@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="username">이름</label>
+    <input type="text" name="username" id="username" value="" />
+    <button id="btn">버튼</button>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+    <script>
+        // btn 을 클릭하면 username 입력 양식에 홍길동을 출력
+        // input 태그의 value 속성에 값 넣기 함수
+        // 사용법 : $("선택자").val("값");
+        $(function () {
+            $("#btn").click(function () {
+                //btn을 클릭하면
+                $("#username").val("홍길동");               
+            })
+            
+        })
+    </script>
+  </body>
+</html>
